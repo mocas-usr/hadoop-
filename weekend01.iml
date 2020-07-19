@@ -17,6 +17,7 @@
         <jarDirectory url="file://$MODULE_DIR$/hdfs" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="hdfs" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="hdfs" level="project" />
+    <orderEntry type="library" name="hdfs  (2)" level="project" />
   </component>
 </module>
