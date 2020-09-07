@@ -52,9 +52,9 @@ public class wcRunner {
         wcJob.setMapOutputValueClass(LongWritable.class);
 
         //指定原始输入路径在那
-        FileInputFormat.setInputPaths(wcJob,new Path("/wc/"));
+        FileInputFormat.setInputPaths(wcJob,new Path("hdfs://weekend01:9000/wc/data"));
         //指定处理结果输出路径
-        FileOutputFormat.setOutputPath(wcJob,new Path("ouyt"));
+        FileOutputFormat.setOutputPath(wcJob,new Path("hdfs://weekend01:9000/wc/data/output4"));
         //将job提交给集群运行
         wcJob.waitForCompletion(true);
     }
